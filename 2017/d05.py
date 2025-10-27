@@ -2,11 +2,13 @@
 AoC 2017 Day 5 Parts 1 & 2
 '''
 
+from sys import argv
+
 def main():
     num_1, num_2, index = 0, 0, 0
     steps_1, steps_2 = [], []
 
-    with open('d05') as f:
+    with open(argv[1]) as f:
         for line in f.readlines():
             steps_1.append(int(line))
             steps_2.append(int(line))

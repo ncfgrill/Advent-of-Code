@@ -3,6 +3,7 @@ AoC 2017 Day 4 Parts 1 & 2
 '''
 
 from collections import Counter
+from sys import argv
 
 def check(phrase):
     words = {}
@@ -28,7 +29,7 @@ def check(phrase):
 def main():
     valid_words, valid_anagrams = 0, 0
 
-    with open('d04') as f:
+    with open(argv[1]) as f:
         for phrase in f.readlines():
             w, a = check(phrase.strip())
             valid_words += w

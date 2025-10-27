@@ -2,6 +2,8 @@
 Aoc 2017 Day 2 Parts 1 & 2
 '''
 
+from sys import argv
+
 def find_min_max(row):
     return max(row) - min(row)
 
@@ -17,7 +19,7 @@ def find_divisible(row):
 def main():
     chksum_m, chksum_d = 0, 0
 
-    with open('d02') as f:
+    with open(argv[1]) as f:
         for line in f.readlines():
             row = [int(n) for n in line.split()]
             chksum_m += find_min_max(row)

@@ -2,7 +2,9 @@
 AoC 2017 Day 3 Parts 1 & 2
 '''
 
-value = 289326
+from sys import argv
+
+value = int(argv[1])
 sq_values = {(0,0) : 1}
 sq_check = [(1,0), (1,1), (0,1), (-1,1), (-1,0), (-1,-1), (0,-1), (1,-1)]
 

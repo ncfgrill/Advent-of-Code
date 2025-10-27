@@ -2,8 +2,10 @@
 AoC 2017 Day 1 Parts 1 & 2
 '''
 
+from sys import argv
+
 def main():
-    with open('d01') as f: seq = f.readline().strip()
+    with open(argv[1]) as f: seq = f.readline().strip()
 
     seq_sum_1, seq_sum_2, seq_len = 0, 0, len(seq)
     for i in range(seq_len):

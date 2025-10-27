@@ -2,6 +2,8 @@
 AoC 2017 Day 6 Parts 1 & 2
 '''
 
+from sys import argv
+
 mem_blocks = None
 configs = set()
 find_again = None
@@ -48,7 +50,7 @@ def new_cycle():
 def main():
     global mem_blocks
 
-    with open('d06') as f:
+    with open(argv[1]) as f:
         mem_blocks = [int(n) for n in f.readline().split()]
 
     add_config()
