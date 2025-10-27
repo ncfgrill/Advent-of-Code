@@ -3,6 +3,7 @@ AoC 2023 day 2 parts 1 & 2
 '''
 
 from math import inf, prod
+from sys import argv
 
 def check_line(line):
     block_numbers = {'red' : 12, 'green' : 13, 'blue' : 14}
@@ -27,7 +28,7 @@ def check_line(line):
 def read_input():
     total_sum, total_power = 0, 0
 
-    with open('d02') as file:
+    with open(argv[1]) as file:
         for line in file:
             temp_sum, temp_power = check_line(line)
             total_sum += temp_sum

@@ -2,6 +2,8 @@
 AoC 2023 Day 1 parts 1 & 2
 '''
 
+from sys import argv
+
 words = {
          'one' : 1, 'two' : 2, 'three' : 3, 'four' : 4, 'five' : 5,
          'six' : 6, 'seven' : 7, 'eight' : 8, 'nine' : 9
@@ -9,7 +11,7 @@ words = {
 
 def read_input():
     total_1, total_2 = 0, 0
-    with open('d01') as file:
+    with open(argv[1]) as file:
         for line in file:
             total_1 += read_number_calibration(line)
             total_2 += read_word_calibration(line)
