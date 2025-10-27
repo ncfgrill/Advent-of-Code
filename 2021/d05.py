@@ -2,11 +2,13 @@
 AoC 2021 Day 5 parts 1 & 2
 '''
 
+from sys import argv
+
 vents = {}
 
 def get_coords():
     coords = []
-    with open('d05') as f:
+    with open(argv[1]) as f:
         l = f.readline()
         while l:
             c = l.strip('\n').split(' -> ')

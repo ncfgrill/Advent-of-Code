@@ -2,6 +2,8 @@
 AoC 2021 Day 9 parts 1 & 2
 '''
 
+from sys import argv
+
 network = []
 points = []
 valid = [x for x in range(1, 9)]
@@ -44,7 +46,7 @@ def find_basins():
 def low_points():
     lp = 0
 
-    with open('d09') as f:
+    with open(argv[1]) as f:
         l = None
         c = [int(a) for a in list(f.readline().strip())]
         n = [int(b) for b in list(f.readline().strip())]

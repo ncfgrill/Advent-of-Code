@@ -2,10 +2,12 @@
 AoC 2021 Day 11 parts 1 & 2
 '''
 
+from sys import argv
+
 grid = []
 
 def get_grid():
-    with open('d11') as f:
+    with open(argv[1]) as f:
         for l in f:
             grid.append([int(x) for x in list(l.strip())])
 

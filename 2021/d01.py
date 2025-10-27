@@ -2,8 +2,10 @@
 AoC 2021 Day 1 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_data():
-    with open('d01') as f:
+    with open(argv[1]) as f:
         return [int(d.strip('\n')) for d in f.readlines()]
 
 def check_data():

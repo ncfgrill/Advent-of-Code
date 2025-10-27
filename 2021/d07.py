@@ -3,9 +3,10 @@ AoC 2021 Day 7 parts 1 & 2
 '''
 
 from math import inf
+from sys import argv
 
 def get_pos():
-    with open('d07') as f:
+    with open(argv[1]) as f:
         l = [int(n) for n in f.readline().split(',')]
         return l, min(l), max(l)
 

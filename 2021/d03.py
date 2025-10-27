@@ -2,8 +2,10 @@
 AoC 2021 Day 3 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_data():
-    with open('d03') as f:
+    with open(argv[1]) as f:
         return [l.strip('\n') for l in f.readlines()]
 
 def rating(data, lm, i):

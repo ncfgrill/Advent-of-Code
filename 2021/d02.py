@@ -2,10 +2,12 @@
 AoC 2021 Day 2 parts 1 & 2
 '''
 
+from sys import argv
+
 def calc_loc():
     h, d, a = 0, 0, 0
 
-    with open('d02') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             l = l.split(' ')
             m, i = l[0], int(l[1])

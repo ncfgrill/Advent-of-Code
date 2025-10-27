@@ -2,11 +2,13 @@
 AoC 2021 Day 4 parts 1 & 2
 '''
 
+from sys import argv
+
 boards = []
 b_num = 1
 
 def get_info():
-    with open('d04') as f:
+    with open(argv[1]) as f:
         nums = [int(n) for n in f.readline().split(',')]
         l = f.readline()
         while l:

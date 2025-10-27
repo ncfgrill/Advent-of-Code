@@ -2,6 +2,8 @@
 AoC 2021 Day 10 parts 1 & 2
 '''
 
+from sys import argv
+
 def find_mid(im):
     return sorted(im)[len(im)//2]
 
@@ -22,7 +24,7 @@ def find():
     cm, im = 0, []
     opn, cls = '([{<', ')]}>'
 
-    with open('d10') as f:
+    with open(argv[1]) as f:
         line = f.readline().strip()
         while line:
             i, save, cor = 0, [], False

@@ -2,9 +2,11 @@
 AoC 2021 Day 8 parts 1 & 2
 '''
 
+from sys import argv
+
 def check_output():
     unique = 0
-    with open('d08') as f:
+    with open(argv[1]) as f:
         output = f.readline().strip()
         while output:
             output = output.split(' | ')[1].split()

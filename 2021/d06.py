@@ -2,9 +2,11 @@
 AoC 2021 Day 6 parts 1 & 2
 '''
 
+from sys import argv
+
 def create_fish():
     f = [0 for x in range(9)]
-    with open('d06') as fi:
+    with open(argv[1]) as fi:
         for l in [int(x) for x in fi.readline().split(',')]:
             f[l] += 1
 
