@@ -2,6 +2,8 @@
 AoC 2024 Day 2 Parts 1 & 2
 '''
 
+from sys import argv
+
 inc = range(1,4)
 dec = range(-3,0)
 mode = None
@@ -47,7 +49,7 @@ def main():
     safe = 0
     safe_with_change = 0
 
-    with open('d02') as f:
+    with open(argv[1]) as f:
         for line in f.readlines():
             valid = check([int(i) for i in line.split()])
             if valid == 2:

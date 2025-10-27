@@ -2,13 +2,15 @@
 AoC 2024 Day 1 Parts 1 & 2
 '''
 
+from sys import argv
+
 MAX_INT = 999999999
 
 def main():
     left_l, right_l = [], []
     right_d = {}
     distance, similarity = 0, 0
-    with open('d01') as f:
+    with open(argv[1]) as f:
         for line in f.readlines():
             left_v, right_v = [int(x) for x in line.split()]
             
