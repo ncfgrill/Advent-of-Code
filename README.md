@@ -9,7 +9,7 @@
     These are a collection of solutions for various years of Advent of Code
     written in Python. Each file takes a command line argument for the input
     file location or input string, and can be executed like the following:<br>
-    <code>python3 <python file> <input file/string></code><br>
+    <code>python3 &lt;python file&gt; input file/string&gt;</code><br>
     The ultimate goal is to complete every problem.
 </p>
 
