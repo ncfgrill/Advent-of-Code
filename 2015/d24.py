@@ -2,15 +2,16 @@
 AoC 2015 Day 24 Parts 1 & 2
 '''
 
-from math import prod, inf
 from itertools import combinations
+from math import prod, inf
+from sys import argv
 
 target, weights = 0, []
 
 def get_weights():
     global weights, perms
 
-    with open('d24') as f: weights = f.readlines()
+    with open(argv[1]) as f: weights = f.readlines()
     weights = [int(w.strip()) for w in weights]
 
 def find_groups():

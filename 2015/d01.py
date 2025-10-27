@@ -2,9 +2,11 @@
 AoC 2015 Day 1 Parts 1 & 2
 '''
 
+from sys import argv
+
 def main():
     floor, position, inc = 0, 0, 1
-    with open('d1') as f:
+    with open(argv[1]) as f:
         for l in f:
             for d in l:
                 position += inc

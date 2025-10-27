@@ -3,13 +3,14 @@ AoC 2015 Day 18 Parts 1 & 2
 '''
 
 from copy import deepcopy as dc
+from sys import argv
 
 grid_1, grid_2, corners = [[0 for i in range(100)]], [], []
 
 def create_initial_grid():
     global grid_1, grid_2, corners
 
-    with open('d18') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             grid_1.append([1 if i == '#' else 0 for i in l.strip()])
 

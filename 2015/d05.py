@@ -2,6 +2,8 @@
 AoC 2015 Day 5 Parts 1 & 2
 '''
 
+from sys import argv
+
 def nice_strings(line):
     nice_str = [0, 0]
     line = line.strip()
@@ -43,7 +45,7 @@ def nice_strings(line):
     return nice_str
 
 def main():
-    with open('d05') as f:
+    with open(argv[1]) as f:
         lines = f.readlines()
         strings = list(map(nice_strings, lines))
         print('P1:', sum(p[0] for p in strings))

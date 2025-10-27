@@ -2,8 +2,9 @@
 AoC 2015 Day 12 Parts 1 and 2
 '''
 
-from collections.abc import Mapping
 from ast import literal_eval as le
+from collections.abc import Mapping
+from sys import argv
 
 num_sum = 0
 
@@ -28,7 +29,7 @@ def extract(data, tf):
 def main():
     global num_sum
 
-    with open('d12') as f:
+    with open(argv[1]) as f:
         json = f.readline()
         json = le(json)
     

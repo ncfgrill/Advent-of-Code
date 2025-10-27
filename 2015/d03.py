@@ -2,6 +2,8 @@
 AoC 2015 Day 3 Parts 1 & 2
 '''
 
+from sys import argv
+
 v1, h1, v2, h2, v3, h3, turn = 0, 0, 0, 0, 0, 0, 0
 
 def num_presents(d):
@@ -28,7 +30,7 @@ def num_presents(d):
     return ((v1, h1), (v2, h2), (0, 0)) if turn % 2 == 1 else ((v1, h1), (0, 0), (v3, h3))
 
 def main():
-    with open('d03') as f:
+    with open(argv[1]) as f:
         lines = [l.strip() for l in f.readline()]
         houses = map(num_presents, lines)
         houses = list(houses)

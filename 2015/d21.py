@@ -3,6 +3,7 @@ AoC 2015 Day 21 Parts 1 & 2
 '''
 
 from math import ceil
+from sys import argv
 
 weapons = [(8,4,0), (10,5,0), (25,6,0), (40,7,0), (74,8,0)]
 armor = [(13,0,1), (31,0,2), (53,0,3), (75,0,4), (102,0,5)]
@@ -20,7 +21,7 @@ def battle(p_damage, p_armor):
 def create_boss():
     global b_hp, b_damage, b_armor
 
-    with open('d21') as f:
+    with open(argv[1]) as f:
         stats, lines = [], f.readlines()
         for l in lines:
             l = l.split(':')

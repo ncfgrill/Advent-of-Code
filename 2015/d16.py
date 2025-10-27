@@ -2,6 +2,8 @@
 AoC 2015 Day 16 Parts 1 & 2
 '''
 
+from sys import argv
+
 sues, wrong1, wrong2 = [], [], []
 ticker = {'children' : 3,
           'cats' : 7,
@@ -20,7 +22,7 @@ class AuntSue:
         self.items = {}
 
 def get_sues():
-    with open('d16') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             l = l.strip().split(' ')
             s = AuntSue(l[1].strip(':'))

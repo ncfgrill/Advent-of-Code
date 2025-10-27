@@ -2,12 +2,14 @@
 AoC 2015 Day 19 Parts 1 & 2
 '''
 
+from sys import argv
+
 molecules, orig = {}, ''
 
 def get_molecules():
     global molecules, orig
 
-    with open('d19') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             l = l.strip().split(' => ')
             if len(l) > 1:

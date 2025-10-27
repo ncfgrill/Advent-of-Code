@@ -2,6 +2,8 @@
 AoC 2015 Day 6 Parts 1 & 2
 '''
 
+from sys import argv
+
 grid_l = [[0 for i in range(1000)] for _ in range(1000)]
 grid_b = [[0 for i in range(1000)] for _ in range(1000)]
 
@@ -29,7 +31,7 @@ def light_grid(l):
 def main():
     global grid_l, grid_b
 
-    with open('d06') as f:
+    with open(argv[1]) as f:
         for l in f:
             light_grid(l.strip())
 

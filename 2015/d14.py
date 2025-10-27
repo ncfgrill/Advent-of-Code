@@ -2,6 +2,8 @@
 AoC 2015 Day 14 Parts 1 & 2
 '''
 
+from sys import argv
+
 reindeer, distance, points = [], [], []
 
 class Reindeer:
@@ -13,7 +15,7 @@ class Reindeer:
         self.is_moving = duration
 
 def create_reindeer():
-    with open('d14') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             l = l.strip().split(' ')
             reindeer.append(Reindeer(int(l[3]), int(l[6]), int(l[13])))

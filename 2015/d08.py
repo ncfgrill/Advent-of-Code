@@ -2,10 +2,12 @@
 AoC 2015 Day 8 Parts 1 & 2
 '''
 
+from sys import argv
+
 def get_characters():
     v1, v2 = 0, 0
 
-    with open('d08') as f:
+    with open(argv[1]) as f:
         for l in f:
             l, i = l.strip('\n'), 1
             s_l = len(l)

@@ -3,12 +3,13 @@ AoC 2015 Day 9 Parts 1 and 2
 '''
 
 from itertools import permutations
+from sys import argv
 
 graph = []
 
 def create_graph():
     seen = set()
-    with open('d09') as f:
+    with open(argv[1]) as f:
         i, s = -1, len(seen)
 
         for l in f.readlines():

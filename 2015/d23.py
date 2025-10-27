@@ -2,12 +2,14 @@
 AoC 2015 Day 23 Parts 1 & 2
 '''
 
+from sys import argv
+
 inst, a, b = [], 0, 0
 
 def get_instructions():
     global inst
 
-    with open('d23') as f:
+    with open(argv[1]) as f:
         inst = f.readlines()
 
     for i, d in enumerate(inst):

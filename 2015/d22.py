@@ -2,6 +2,8 @@
 AoC 2015 Day 22 Parts 1 & 2
 '''
 
+from sys import argv
+
 min_mana = 999999999
 
 class Boss:
@@ -54,7 +56,7 @@ class Wizard:
             else: self.effects[e] -= 1
 
 def create_boss():
-    with open('d22') as f:
+    with open(argv[1]) as f:
         stats, lines = [], f.readlines()
         for l in lines:
             l = l.split(':')

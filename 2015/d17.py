@@ -2,12 +2,14 @@
 AoC 2015 Day 17 Parts 1 & 2
 '''
 
+from sys import argv
+
 containers, combs, min_c = [], 0, [99, 0]
 
 def get_containers():
     global containers
 
-    with open('d17') as f:
+    with open(argv[1]) as f:
         containers = [int(l.strip()) for l in f.readlines()]
 
     containers.sort()

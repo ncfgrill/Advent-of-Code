@@ -2,10 +2,12 @@
 AoC 2015 Day 7 Parts 1 & 2
 '''
 
+from sys import argv
+
 signals, values = {}, {}
 
 def get_signals_and_values():
-    with open('d07') as f:
+    with open(argv[1]) as f:
         for l in f:
             l = l.strip('\n').split('->')
             try: values[l[1].strip()] = int(l[0].strip())

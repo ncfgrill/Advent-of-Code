@@ -2,6 +2,8 @@
 AoC 2015 Day 15 Parts 1 & 2
 '''
 
+from sys import argv
+
 ingredients = []
 
 class Ingredient:
@@ -10,7 +12,7 @@ class Ingredient:
         self.tex, self.cal = tex, cal
 
 def get_ingredients():
-    with open('d15') as f:
+    with open(argv[1]) as f:
         for l in f.readlines():
             l = l.strip().split(' ')
             ingredients.append(Ingredient(int(l[2].strip(',')),
