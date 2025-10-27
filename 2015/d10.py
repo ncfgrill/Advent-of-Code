@@ -2,8 +2,10 @@
 AoC 2015 Day 10 Parts 1 and 2
 '''
 
+from sys import argv
+
 def main():
-    string, i = '1113122113', 0
+    string, i = argv[1], 0
 
     while i < 50:
         if i == 40: print('Length:', len(string))

@@ -3,9 +3,10 @@ AoC 2015 Day 4 parts 1 & 2
 '''
 
 from hashlib import md5
+from sys import argv
 
 def main():
-    key, value, num, five_found = 'iwrupvqb', '', 0, False
+    key, value, num, five_found = argv[1], '', 0, False
 
     while value[:6] != '0'*6:
         num += 1

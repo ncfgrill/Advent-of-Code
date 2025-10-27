@@ -2,7 +2,9 @@
 AoC 2015 Day 11 Parts 1 & 2
 '''
 
-password, inc, d1, d2 = 'cqjxjnds', False, False, False
+from sys import argv
+
+password, inc, d1, d2 = argv[1], False, False, False
 counter, i = [ord(i) - ord('a') for i in password], len(password) - 1
 bad = [ord('i'), ord('l'), ord('o')]
 
