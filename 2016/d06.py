@@ -3,13 +3,14 @@ AoC 2016 Day 6 Parts 1 & 2
 '''
 
 from collections import Counter
+from sys import argv
 
 cols = []
 
 def get_cols():
     global cols
 
-    with open('d06') as f: lines = f.readlines()
+    with open(argv[1]) as f: lines = f.readlines()
 
     lines = [l.strip() for l in lines]
     cols = ['' for x in lines[0]]

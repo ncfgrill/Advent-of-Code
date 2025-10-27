@@ -2,10 +2,12 @@
 AoC 2016 Day 8 Parts 1 & 2
 '''
 
+from sys import argv
+
 pad = [[' ' for i in range(50)] for _ in range(6)]
 
 def get_instructions():
-    with open('d08') as f: lines = f.readlines()
+    with open(argv[1]) as f: lines = f.readlines()
     return [l.strip().split(' ') for l in lines]
 
 def rect(rc):

@@ -2,6 +2,8 @@
 AoC 2016 Day 15 parts 1 & 2
 '''
 
+from sys import argv
+
 discs = []
 
 class Disc:
@@ -11,7 +13,7 @@ class Disc:
 def get_discs():
     global discs
 
-    with open('d15') as f: lines = f.readlines()
+    with open(argv[1]) as f: lines = f.readlines()
     lines = [l.strip().split(' ') for l in lines]
     for l in lines: discs.append(Disc(int(l[3]), int(l[-1][0])))
 

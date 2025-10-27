@@ -2,12 +2,14 @@
 AoC 2016 Day 1 Parts 1 & 2
 '''
 
+from sys import argv
+
 directions = []
 
 def get_directions():
     global directions
 
-    with open('d01.txt') as f:
+    with open(argv[1]) as f:
         directions = f.readline().split(', ')
 
     for i, d in enumerate(directions):

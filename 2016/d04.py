@@ -3,13 +3,14 @@ AoC 2016 Day 4 Parts 1 & 2
 '''
 
 from collections import Counter
+from sys import argv
 
 names = []
 
 def get_names():
     global names
 
-    with open('d04.txt') as f: names = f.readlines()
+    with open(argv[1]) as f: names = f.readlines()
     for i, n in enumerate(names):
         names[i] = n.strip().split('[')
         names[i][-1] = names[i][-1].strip(']')

@@ -2,6 +2,8 @@
 AoC 2016 Day 9 Parts 1 & 2
 '''
 
+from sys import argv
+
 def get_values(l, i, j):
     while l[j] != ')': j += 1
     v = l[i:j].split('x')
@@ -20,7 +22,7 @@ def decompress(l, mul, ver):
     return s
 
 def main():
-    with open('d09') as f: line = f.readline().strip()
+    with open(argv[1]) as f: line = f.readline().strip()
     print('v1 decompression:', decompress(line, 1, 1))
     print('v2 decompression:', decompress(line, 1, 2))
 

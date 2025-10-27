@@ -3,9 +3,10 @@ AoC 2016 Day 17 parts 1 & 2
 '''
 
 from hashlib import md5
+from sys import argv
 
 min_steps, max_steps, route = 99999999, 0, ''
-good, passcode = 'bcdef', 'gdjjyniy'
+good, passcode = 'bcdef', argv[1]
 
 def next_step(r, c, steps, h):
     global min_steps, max_steps, good, passcode, route

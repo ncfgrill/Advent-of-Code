@@ -2,12 +2,14 @@
 AoC 2016 Day 2 Parts 1 and 2
 '''
 
+from sys import argv
+
 instructions = []
 
 def get_instructions():
     global instructions
 
-    with open('d02.txt') as f: instructions = f.readlines()
+    with open(argv[1]) as f: instructions = f.readlines()
     for i, l in enumerate(instructions): instructions[i] = l.strip()
 
 def find_code():

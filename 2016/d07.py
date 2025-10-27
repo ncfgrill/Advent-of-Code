@@ -2,8 +2,10 @@
 AoC 2016 Day 7 Parts 1 & 2
 '''
 
+from sys import argv
+
 def get_ips():
-    with open('d07') as f: lines = f.readlines()
+    with open(argv[1]) as f: lines = f.readlines()
     return [l.strip() for l in lines]
 
 def check_tls(ip):

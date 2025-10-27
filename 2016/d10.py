@@ -2,6 +2,8 @@
 AoC 2016 Day 10 Parts 1 & 2
 '''
 
+from sys import argv
+
 o_bin, instructions, bots, two_val = {}, {}, {}, set()
 
 class Bot:
@@ -11,7 +13,7 @@ class Bot:
 def get_bots_and_instructions():
     global instructions, bots, two_val
 
-    with open('d10') as f: lines = f.readlines()
+    with open(argv[1]) as f: lines = f.readlines()
     for l in lines:
         l = l.strip().split(' ')
         if l[0] == 'bot':

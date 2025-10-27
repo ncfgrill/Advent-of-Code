@@ -2,12 +2,15 @@
 AoC 2016 Day 21 parts 1 & 2
 '''
 
+from sys import argv
+
 code, insts = ['a','b','c','d','e','f','g','h'], None
 
 def get_instructions():
     global insts
 
-    with open('d21') as f: insts = [l.strip().split(' ') for l in f.readlines()]
+    with open(argv[1]) as f:
+        insts = [l.strip().split(' ') for l in f.readlines()]
 
 def swp(i):
     global code

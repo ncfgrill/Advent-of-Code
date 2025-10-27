@@ -2,12 +2,14 @@
 AoC 2016 Day 20 parts 1 & 2
 '''
 
+from sys import argv
+
 ip_ranges = []
 
 def get_ips():
     global ip_ranges
 
-    with open('d20') as f: rl = f.readlines()
+    with open(argv[1]) as f: rl = f.readlines()
     rl = [l.strip().split('-') for l in rl]
     ip_ranges = sorted([[int(l[0]), int(l[1])] for l in rl], key=lambda x: x[0])
 

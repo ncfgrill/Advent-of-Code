@@ -3,6 +3,7 @@ AoC 2016 Day 14 parts 1 & 2
 '''
 
 from hashlib import md5
+from sys import argv
 
 fives, index = {}, 0
 
@@ -48,7 +49,7 @@ def check_five(salt, num, check, p):
 def find_key(p):
     global fives
 
-    salt, num, total_keys = 'qzyelonm', -1, 0
+    salt, num, total_keys = argv[1], -1, 0
     
     while total_keys < 64:
         num += 1

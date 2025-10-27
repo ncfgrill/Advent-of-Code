@@ -2,10 +2,12 @@
 AoC 2016 Day 13 parts 1 & 2
 '''
 
+from sys import argv
+
 min_steps, distinct = 99999999, set()
 
 def is_wall(r, c):
-    f_n = 1350
+    f_n = int(argv[1])
 
     v = r * r + 3 * r + 2 * r * c + c + c * c + f_n
     return bin(v)[2:].count('1') % 2 == 1

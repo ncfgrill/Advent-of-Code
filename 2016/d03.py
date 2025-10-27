@@ -2,12 +2,14 @@
 AoC 2016 Day 3 Parts 1 & 2
 '''
 
+from sys import argv
+
 triangles = []
 
 def get_triangles():
     global triangles
 
-    with open('d03.txt') as f: triangles = f.readlines()
+    with open(argv[1]) as f: triangles = f.readlines()
     for i, t in enumerate(triangles):
         triangles[i] = [int(x) for x in t.strip().split(' ') if len(x) > 0]
 

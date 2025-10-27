@@ -2,8 +2,10 @@
 AoC 2016 Day 18 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_floor():
-    with open('d18') as f: return [f.readline().strip()]
+    with open(argv[1]) as f: return [f.readline().strip()]
 
 def count(floor):
     return sum(1 if c == '.' else 0 for c in floor)

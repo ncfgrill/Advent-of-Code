@@ -3,9 +3,10 @@ AoC 2016 Day 5 parts 1 & 2
 '''
 
 from hashlib import md5
+from sys import argv
 
 def main():
-    key, num = 'ffykfhsq', 0
+    key, num = argv[1], 0
     pass_easy, pass_hard = '', ['-','-','-','-','-','-','-','-']
 
     print('Password:', ''.join(p for p in pass_hard))

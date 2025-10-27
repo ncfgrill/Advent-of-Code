@@ -2,8 +2,10 @@
 AoC 2016 Day 12 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_instructions():
-    with open('d12') as f: insts = f.readlines()
+    with open(argv[1]) as f: insts = f.readlines()
     return [i.strip().split(' ') for i in insts]
 
 def execute_instructions(c):
