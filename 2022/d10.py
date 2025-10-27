@@ -2,6 +2,8 @@
 AoC 2022 Day 10 parts 1 & 2
 '''
 
+from sys import argv
+
 screen = ['#']
 
 def print_screen():
@@ -15,7 +17,7 @@ def signals():
     x = 1
     total = 0
 
-    with open('d10') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             a = d.strip().split(' ')
             if a[0] == 'addx':

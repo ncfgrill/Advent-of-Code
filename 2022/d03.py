@@ -2,6 +2,8 @@
 AoC 2022 Day 3 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_priority(p):
     lower_case = ord('a') - 1
     upper_case = ord('A') - 27
@@ -18,7 +20,7 @@ def get_score():
     grouping = {}
     group_priority = 0
 
-    with open('d03') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             ruck = {}
             mid = len(d.strip()) // 2

@@ -2,12 +2,14 @@
 AoC 2022 Day 2 parts 1 & 2
 '''
 
+from sys import argv
+
 def get_score():
     rounds = []
     total_score = 0
     total_real_score = 0
 
-    with open('d02') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             r = d.strip().split(' ')
             opp, you = r[0], r[1]

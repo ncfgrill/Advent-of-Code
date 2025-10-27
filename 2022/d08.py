@@ -2,12 +2,14 @@
 AoC 2022 Day 8 parts 1 & 2
 '''
 
+from sys import argv
+
 trees = []
 
 def get_trees():
     global trees
 
-    with open('d08') as f:
+    with open(argv[1]) as f:
         i = 0
         for d in f.readlines():
             trees.append([])

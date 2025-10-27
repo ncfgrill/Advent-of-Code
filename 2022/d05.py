@@ -3,6 +3,7 @@ AoC 2022 Day 5 parts 1 & 2
 '''
 
 from copy import deepcopy
+from sys import argv
 
 crates = []
 crates_2 = None
@@ -38,7 +39,7 @@ def do_things():
     global first_row_done, crates_2
 
     time_to_move = False
-    with open('d05') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             if d == '\n':
                 crates_2 = deepcopy(crates)

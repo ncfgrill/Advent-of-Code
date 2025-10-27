@@ -2,11 +2,13 @@
 AoC 2022 Day 1 parts 1 & 2
 '''
 
+from sys import argv
+
 def count_cals():
     cals = []
     total = 0
 
-    with open('d01') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             if d != '\n':
                 total += int(d)

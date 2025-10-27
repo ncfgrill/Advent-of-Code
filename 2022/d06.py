@@ -2,12 +2,14 @@
 AoC 2022 Day 6 parts 1 & 2
 '''
 
+from sys import argv
+
 def read_signal():
     signals = []
     char_4 = 0
     l = 4
 
-    with open('d06') as f:
+    with open(argv[1]) as f:
         signal = f.readline()
     
     for i, s in enumerate(signal):

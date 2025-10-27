@@ -2,11 +2,13 @@
 AoC 2022 Day 4 parts 1 & 2
 '''
 
+from sys import argv
+
 def overlaps():
     contains = 0
     overlaps = 0
 
-    with open('d04') as f:
+    with open(argv[1]) as f:
         for d in f.readlines():
             pairs = [p.strip().split('-') for p in d.split(',')]
             p00, p01 = int(pairs[0][0]), int(pairs[0][1])
