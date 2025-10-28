@@ -70,7 +70,7 @@ def solve():
 
 def main():
     solution = solve()
-    print(f'Part 1: {solution[0]}\nPart 2: {solution[1]}')
+    print(f'AoC 2020 Day 4\nPart 1: {solution[0]}\nPart 2: {solution[1]}')
 
 if __name__ == '__main__':
     main()

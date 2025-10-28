@@ -43,7 +43,7 @@ def find_missing():
             return seat_id + 1
 
 def main():
-    print(f'Part 1: {solve()}\nPart 2: {find_missing()}')
+    print(f'AoC 2020 Day 5\nPart 1: {solve()}\nPart 2: {find_missing()}')
 
 if __name__ == '__main__':
     main()
