@@ -3,7 +3,6 @@ AoC 2020 Day 8 parts 1 & 2
 '''
 
 from sys import argv
-from time import sleep
 
 swapped = False
 
