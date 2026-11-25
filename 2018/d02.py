@@ -37,8 +37,7 @@ def id_compare(ids):
         while j < len(ids):
             id_2 = ids[j]
 
-            if sum([x for x in [int(id_1[k] == id_2[k]) \
-               for k in range(l)]]) + 1 == l:
+            if sum([int(id_1[k] == id_2[k]) for k in range(l)]) + 1 == l:
                 return similar(id_1, id_2)
 
             j += 1
